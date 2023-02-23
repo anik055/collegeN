@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+		@media only screen and (max-width: 601px) {
+			#justifyCenter{
+display: flex;
+justify-content: center;
+			}
+  #disBlock {
+    display: block!important;
+	width: 400px;
+	text-align: left;
+  }
+}
+
+
+
+.fontBold{
+	font-weight: 700;
+}
+
+body{
+  background: #F5F5F5;
+  line-height: 22px;
+  font-family: 'Cairo', sans-serif;
+}
+    </style>
+  </head>
+<body id="justifyCenter" style="width: 600px">
+	<div>
+	<label id="disBlock" class="fontBold">ITE COLLEGE CENTRAL REQUISITION FORM FOR OUTGOING POSTAL MAILS</label>
+	<div style="margin: 10px 0px;" class="fontBold">1.Sender's Details</div>
+	<div id="disBlock" style="display: flex; ">
+		<div style="flex-basis: 60%; text-align: left; margin-bottom: 10px;">
+			
+			<div><span class="fontBold">Name of Sender:</span> ITE College Central 2 Ang MoKio Singapore 567720</div>
+
+		</div>
+		<div style="flex-basis: 40%; text-align: right;">
+			<div>
+				<span class="fontBold">Date:</span><input type="date">
+			</div>
+			<div class="fontBold">
+				Total Mail: <input type="text">
+			</div>
+
+		</div>
+	</div>
+
+	<div style="margin-top: 10px;" class="fontBold">
+		2. Postal Services Required :
+		<div id="disBlock" style="display:flex; justify-content: center; margin-top: 10px;">
+			<div style="display:flex; justify-content: center; flex-wrap: wrap; width: 300px;">
+				<div style="flex-basis: 33%;"></div>
+			<div style="flex-basis: 33%; border: 1px solid black; border-right-width: 0px!important;">
+				Local Mail
+			</div>
+			<div style="flex-basis: 32%; border: 1px solid black;   ">Overseas Mail</div>
+			<div style="flex-basis: 32%; border: 1px solid black; border-bottom-width: 0px!important;">Normal</div>
+			<div style="flex-basis: 33%;"><input type="checkbox" name="" id=""></div>
+			<div style="flex-basis: 33%;"><input type="checkbox" name="" id=""></div>
+			<div style="flex-basis: 32%; border: 1px solid black;">Registered</div>
+			<div style="flex-basis: 33%;"><input type="checkbox" name="" id=""></div>
+			<div style="flex-basis: 33%;"><input type="checkbox" name="" id=""></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div style="margin: 10px 0px;" class="fontBold">
+		3. To be filled by Courier:
+		<div id="disBlock" style="display: flex">
+			<div style="flex-basis: 50%; text-align: right;">
+				Received By : <input type="text">
+			</div>
+			<div style="flex-basis: 50%; text-align: right;">
+				Processed By : <input type="text">
+			</div>
+			
+		</div>
+		<div id="disBlock" style="display: flex">
+			<div style="flex-basis: 50%; text-align: right;">
+				Sign : <input type="text">
+			</div>
+			<div style="flex-basis: 50%; text-align: right;">
+				Total Amount : <input type="text">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
