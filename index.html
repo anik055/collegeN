@@ -5,96 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <style>
-		@media only screen and (max-width: 601px) {
-			#justifyCenter{
-display: flex;
-justify-content: center;
-			}
-  #disBlock {
-    display: block!important;
-	width: 400px;
-	text-align: left;
-  }
-}
+      .main {
+        width: 600px;
+      }
 
+      .fontBold {
+        font-weight: 700;
+      }
 
+      body {
+        background: #f5f5f5;
+        line-height: 22px;
+        font-family: "Cairo", sans-serif;
+      }
 
-.fontBold{
-	font-weight: 700;
-}
+      table {
+        border-collapse: collapse;
+        width: 600px;
+      }
 
-body{
-  background: #F5F5F5;
-  line-height: 22px;
-  font-family: 'Cairo', sans-serif;
-}
+      td,
+      th {
+        border: 1px solid #00000033;
+        padding: 6px;
+        text-align: left;
+        min-width: 50px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .main {
+          width: 400px;
+        }
+		table {
+        border-collapse: collapse;
+        width: 400px;
+      }
+
+      }
     </style>
   </head>
-<body id="justifyCenter" style="width: 600px">
-	<div>
-	<label id="disBlock" class="fontBold">ITE COLLEGE CENTRAL REQUISITION FORM FOR OUTGOING POSTAL MAILS</label>
-	<div style="margin: 10px 0px;" class="fontBold">1.Sender's Details</div>
-	<div id="disBlock" style="display: flex; ">
-		<div style="flex-basis: 60%; text-align: left; margin-bottom: 10px;">
+  <body style="display: flex; justify-content: center">
+    <div class="main">
+      <div style="display: flex; justify-content: center">
+        <u class="fontBold"
+          >REQUISITION FORM FOR OUTGOING POSTAL MAILS</u
+        >
+      </div>
+
+      <div class="fontBold" style="margin: 5px 0px"><u>I) Sender's Details</u></div>
+      <table>
+        <thead>
+          <tr>
+            <td>Name of Sender</td>
+            <td></td>
+            <td>tel</td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Department</td>
+            <td></td>
+            <td>Date</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>cost Centre</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="border-bottom: 2px solid black; padding-bottom: 10px"></div>
+
+      <div class="fontBold" style="margin: 5px 0px"><u>II) Postal Service's Required</u></div>
+      <table>
+        <thead>
+          <tr>
+            <td rowspan="2"></td>
+            <td colspan="2">Local</td>
+            <td colspan="2">Overseas</td>
+          </tr>
+          <tr>
+            <td>Normal</td>
+            <td>Registered *</td>
+            <td>Normal</td>
+            <td>Registered *</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Please "✔" on service needed</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Quantity :</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ul>
+        <li>
+          For registered mails, please indicate <b><u>"Registered"</u> </b> on
+          the envelope
+        </li>
+        <li >
+			<div style="width: 300px; display: table;"><span style="display: table-cell; width: 100px;">Received By:</span>
+				<span style="display: table-cell; border-bottom: 1px solid black;"></span></div>
 			
-			<div><span class="fontBold">Name of Sender:</span> ITE College Central 2 Ang MoKio Singapore 567720</div>
+          <!-- <span >Received By:</span>
+          <span
+            style="
+              width: 200px!important;
+              /* background-color: black; */
+			  border-bottom: 1px solid black;
+			  /* color:black; */
+              height: 1px!important;
+			  padding-bottom: 5px;
+            "
+          ></span> -->
+        </li>
+        <li>
+          Mail quantity will ONLY be verified by transnational personnel at
+          mailroom
+        </li>
+      </ul>
 
-		</div>
-		<div style="flex-basis: 40%; text-align: right;">
-			<div>
-				<span class="fontBold">Date:</span><input type="date">
-			</div>
-			<div class="fontBold">
-				Total Mail: <input type="text">
-			</div>
+      <div style="border-bottom: 2px solid black; padding-bottom: 10px"></div>
 
-		</div>
-	</div>
-
-	<div style="margin-top: 10px;" class="fontBold">
-		2. Postal Services Required :
-		<div id="disBlock" style="display:flex; justify-content: center; margin-top: 10px;">
-			<div style="display:flex; justify-content: center; flex-wrap: wrap; width: 300px;">
-				<div style="flex-basis: 33%;"></div>
-			<div style="flex-basis: 33%; border: 1px solid black; border-right-width: 0px!important;">
-				Local Mail
-			</div>
-			<div style="flex-basis: 32%; border: 1px solid black;   ">Overseas Mail</div>
-			<div style="flex-basis: 32%; border: 1px solid black; border-bottom-width: 0px!important;">Normal</div>
-			<div style="flex-basis: 33%;"><input type="checkbox" name="" id=""></div>
-			<div style="flex-basis: 33%;"><input type="checkbox" name="" id=""></div>
-			<div style="flex-basis: 32%; border: 1px solid black;">Registered</div>
-			<div style="flex-basis: 33%;"><input type="checkbox" name="" id=""></div>
-			<div style="flex-basis: 33%;"><input type="checkbox" name="" id=""></div>
-			</div>
-
-		</div>
-	</div>
-
-	<div style="margin: 10px 0px;" class="fontBold">
-		3. To be filled by Courier:
-		<div id="disBlock" style="display: flex">
-			<div style="flex-basis: 50%; text-align: right;">
-				Received By : <input type="text">
-			</div>
-			<div style="flex-basis: 50%; text-align: right;">
-				Processed By : <input type="text">
-			</div>
-			
-		</div>
-		<div id="disBlock" style="display: flex">
-			<div style="flex-basis: 50%; text-align: right;">
-				Sign : <input type="text">
-			</div>
-			<div style="flex-basis: 50%; text-align: right;">
-				Total Amount : <input type="text">
-			</div>
-		</div>
-	</div>
-</div>
-</body>
+      <div class="fontBold" style="margin: 5px 0px">
+        <u>III) To be filled in by Transnational Personnel (Franker):</u>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Processed By</th>
+            <th></th>
+            <th>Total Amount</th>
+            <th></th>
+          </tr>
+          <tr>
+            <th>Date</th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </body>
 </html>
